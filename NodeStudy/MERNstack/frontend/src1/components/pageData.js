@@ -1,8 +1,7 @@
-
 export const pageData = [
     {
         name: "Home",
-        path: "/home"
+        path: "/Home"
     },
     {
         name: "Create Blog",
@@ -19,5 +18,5 @@ export const pageData = [
     {
         name: "Contact",
         path: "/contact"
-    },
+    }
 ]

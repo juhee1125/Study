@@ -1,7 +1,7 @@
-import { Button } from "@/components/ui/button"
-import { Label } from "@/components/ui/label"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
+// import { Button } from "@/components/ui/button"
+// import { Label } from "@/components/ui/label"
+// import { Input } from "@/components/ui/input"
+// import { Textarea } from "@/components/ui/textarea"
 
 export function Contact() {
 
@@ -16,13 +16,13 @@ export function Contact() {
             <p className="leading-7 [&:not(:first-child)]:mt-6 whitespace-pre-wrap text-center">You can contact us via email at <a href="mailto:contact@example.com">contact@example.com</a>.</p>
             <p className="leading-7 [&:not(:first-child)]:mt-6 whitespace-pre-wrap text-center mb-8">Alternatively, you can fill out the form below:</p>
             <form onSubmit={handleSubmit}>
-                <Label className="flex left-0 p-2">Name:</Label>
-                <Input type="text" name="name" />
-                <Label className="flex left-0 p-2">Email:</Label>
-                <Input type="email"  name="email" />
-                <Label className="flex left-0 p-2">Message:</Label>
-                <Textarea name="message"></Textarea>
-                <Button type="submit" className="mt-4">Send</Button>
+                <label className="flex left-0 p-2">Name:</label>
+                <input type="text" name="name" />
+                <label className="flex left-0 p-2">Email:</label>
+                <input type="email"  name="email" />
+                <label className="flex left-0 p-2">Message:</label>
+                <textarea name="message"></textarea>
+                <button type="submit" className="mt-4">Send</button>
             </form>
         </div>
     )

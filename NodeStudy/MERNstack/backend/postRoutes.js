@@ -39,12 +39,14 @@ postRoutes.route("/posts/:id").get(verifyToken, async(req, res)=>{
 // 게시글 생성
 postRoutes.route("/posts").post(verifyToken, async(req, res)=>{
     let db = database.getDb()
+    console.log(req.body)
     let mongoObject = {
-        title:req.body.title,
-        description:req.body.description,
-        content:req.body.content,
-        author:req.body.author,
-        dateCreated:req.body.dateCreated
+        title: req.body.title,
+        description: req.body.description,
+        content: req.body.content,
+        author: req.body._id,
+        dateCreated: req.body.dateCreated,
+        imageId: req.body.imageId
     }
     let data = await db.collection("posts").insertOne(mongoObject)
     res.json(data)
